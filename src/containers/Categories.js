@@ -1,7 +1,11 @@
-const Categories = () => (
-  <div>
-    Hello World
-  </div>
-);
+const Cartegories = () => {
+  console.log('Mountain');
 
-export default Categories;
+  return (
+    <div>
+      Hello worldz
+    </div>
+  );
+};
+
+export default Cartegories;
