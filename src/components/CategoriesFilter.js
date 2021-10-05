@@ -7,9 +7,9 @@ const CategoriesFilter = ({ onchange, value }) => {
   return (
     <div>
       <h2>Pick Category</h2>
-      <select id="filter" onchange={onchange} value={value}>
-        {categories.map(el => {
-          <option key={Math.floor(Math.random() * 100)} value={el}>{el}</option>
+      <select id="filter" onChange={onchange} value={value}>
+        {categories.map((el) => {
+          <option key={Math.floor(Math.random() * 100)} value={el}>{el}</option>;
         })}
       </select>
     </div>
@@ -19,6 +19,6 @@ const CategoriesFilter = ({ onchange, value }) => {
 CategoriesFilter.propTypes = {
   onChange: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
-}
+};
 
 export default CategoriesFilter;

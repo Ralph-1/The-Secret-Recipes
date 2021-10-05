@@ -5,21 +5,21 @@ import CategoryFilter from '../components/CategoriesFilter';
 import fetchMeals from '../actions/fetchAll';
 import { getProductsPending } from '../config/index';
 import { UPDATE_CATEGORY } from '../actions/index';
-import MealsList from './RecipeList'
+import MealsList from './RecipeList';
 
-const AllMeals = props => {
+const AllMeals = (props) => {
   const {
-    addFilter, match, current, fetchAllMeals
+    addFilter, match, current, fetchAllMeals,
   } = props;
 
   const { category } = match.params;
 
-  const handleFilterChange = e => {
+  const handleFilterChange = (e) => {
     const newCategory = e.target.value;
 
     addFilter(newCategory);
     fetchMeals(newCategory);
-  }
+  };
 
   return (
     <div>
@@ -37,7 +37,6 @@ AllMeals.defaultProps = {
   category: 'beef',
 };
 
-
 AllMeals.propTypes = {
   category: PropTypes.string.isRequired,
   addFilter: PropTypes.func.isRequired,
@@ -46,7 +45,7 @@ AllMeals.propTypes = {
   match: PropTypes.shape().isRequired,
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   const { allMeals } = state;
   return (
     {

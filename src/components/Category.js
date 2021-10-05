@@ -4,11 +4,11 @@ import Images from './RecipeImage';
 
 const Category = ({ src, name }) => (
   <Images scr={src} name={name} />
-)
+);
 
 Category.propTypes = {
   src: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-}
+};
 
 export default Category;

@@ -21,8 +21,8 @@ const MealDetails = ({
   category,
   pending,
   resetSelected,
- }) => {
-  const { id } = match.params
+}) => {
+  const { id } = match.params;
 
   useEffect(() => {
     fetchMeal(id);
@@ -34,8 +34,8 @@ const MealDetails = ({
   };
 
   if (!componentShouldRender()) {
-    return(<Loading />);
-  };
+    return (<Loading />);
+  }
 
   return (
     <div>
@@ -55,9 +55,9 @@ const MealDetails = ({
       </div>
     </div>
   );
- };
+};
 
- const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   const { singleMeal } = state;
   const { details } = singleMeal;
   return (
@@ -73,13 +73,12 @@ const MealDetails = ({
   );
 };
 
-
- const mapDispatchToProps = {
+const mapDispatchToProps = {
   fetchMeal,
   resetSelected,
 };
 
- MealDetails.defaultProps = {
+MealDetails.defaultProps = {
   img: '',
   pending: false,
   name: '',
@@ -88,7 +87,7 @@ const MealDetails = ({
   ingredients: [''],
 };
 
- MealDetails.propTypes = {
+MealDetails.propTypes = {
   img: PropTypes.string,
   area: PropTypes.string,
   pending: PropTypes.bool,
@@ -106,7 +105,7 @@ const MealDetails = ({
   resetSelected: PropTypes.func.isRequired,
 };
 
- export default connect(
-   mapStateToProps,
-   mapDispatchToProps,
- )(MealDetails);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(MealDetails);
