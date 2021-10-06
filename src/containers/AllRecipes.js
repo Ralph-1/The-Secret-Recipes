@@ -9,7 +9,7 @@ import MealsList from './RecipeList';
 
 const AllMeals = (props) => {
   const {
-    addFilter, match, current, fetchAllMeals,
+    addFilter, match, current, fetchMeals,
   } = props;
 
   const { category } = match.params;
@@ -38,10 +38,10 @@ AllMeals.defaultProps = {
 };
 
 AllMeals.propTypes = {
-  category: PropTypes.string.isRequired,
+  category: PropTypes.string,
   addFilter: PropTypes.func.isRequired,
   fetchMeals: PropTypes.func.isRequired,
-  current: PropTypes.strring.isRequired,
+  current: PropTypes.string.isRequired,
   match: PropTypes.shape().isRequired,
 };
 
@@ -56,7 +56,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
-  fetchAllMeals,
+  fetchMeals,
   addFilter: UPDATE_CATEGORY,
 };
 

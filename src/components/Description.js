@@ -7,7 +7,7 @@ const RecipeDescription = ({
   <div className={className}>
     <p>
       <span>Category :</span>
-      <span>{Cartegory}</span>
+      <span>{category}</span>
     </p>
     <br />
     <hr />

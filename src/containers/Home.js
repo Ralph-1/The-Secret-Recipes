@@ -1,10 +1,11 @@
+/* eslint-disable react/forbid-prop-types */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes, { object } from 'prop-types';
 import getCategories from '../actions/fetchCategories';
-import Category from '../components/Categories';
-import Loading from '../components/Loading';
+import Category from '../components/Category';
+import Loading from '../components/loading';
 import {
   getProductsError,
   getProductsPending,

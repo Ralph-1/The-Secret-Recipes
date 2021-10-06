@@ -8,14 +8,13 @@ import fetchMeal from '../actions/fetchSingle';
 import {
   getProductsError,
   getProducts,
-  getProductsPending
+  getProductsPending,
 } from '../config/index';
 import { UPDATE_CATEGORY } from '../actions/index';
 import Loading from '../components/loading';
-import { PropTypes } from 'react-bootstrap/esm/Image';
 
 const MealsList = ({
-  products, pending, fetchAllMeals,category
+  products, pending, fetchAllMeals, category,
 }) => {
   useEffect(() => {
     fetchAllMeals(category);
@@ -26,11 +25,11 @@ const MealsList = ({
     return true;
   };
 
-  if (!shouldComponenRender()) { <Loading /> }
+  if (!shouldComponenRender()) { <Loading />; }
   return (
     <div>
       <div className="container">
-        {products.map(item => (
+        {products.map((item) => (
           <Link to={`/meal/${item.idMeal}`} key={Math.floor(Math.random * 1000)}>
             <MealPreview
               src={item.strMealThumb}
@@ -41,9 +40,8 @@ const MealsList = ({
         ))}
       </div>
     </div>
-  )
+  );
 };
-
 
 MealsList.defaultProps = {
   products: [''],
@@ -53,10 +51,10 @@ MealsList.propTypes = {
   pending: PropTypes.bool.isRequired,
   category: PropTypes.string.isRequired,
   fetchAllMeals: PropTypes.func.isRequired,
-  products: PropTypes.arrayOf(string),
+  products: PropTypes.arrayOf(String),
 };
 
-const MapStateToProps = state => {
+const mapStateToProps = (state) => {
   const { allMeals } = state;
   return (
     {
@@ -75,6 +73,6 @@ const mapDispatchToProps = {
 };
 
 export default connect(
-  MapStateToProps,
-  mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps,
 )(MealsList);

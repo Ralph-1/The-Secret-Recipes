@@ -1,12 +1,12 @@
 import axios from 'axios';
 import {
   fetchProductsError,
-  fetchProductsePending,
+  fetchProductsPending,
   fetchSingleMeal,
 } from './index';
 
 const fetchMeal = (id) => (dispatch) => {
-  dispatch(fetchProductsePending);
+  dispatch(fetchProductsPending);
   axios.get(`www.themealdb.com/api/json/v1/1/search.php?s=${id}`)
     .then((res) => res.json())
     .then((res) => {
@@ -16,7 +16,7 @@ const fetchMeal = (id) => (dispatch) => {
       fetchSingleMeal(res.meals[0]);
     })
     .catch((error) => {
-      dispatch(fetchProductsError);
+      dispatch(fetchProductsError(error));
     });
 };
 

@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CategoriesFilter = ({ onchange, value }) => {
+const CategoriesFilter = ({ onChange, value }) => {
   const categories = ['Beef', 'Chicken', 'Dessert', 'Lamb', 'Miscellaneous', 'Pasta', 'Pork', 'Seafood', 'Side', 'Starter', 'Vegan', 'Vegetarian', 'Breakfast', 'Goat'];
 
   return (
     <div>
       <h2>Pick Category</h2>
-      <select id="filter" onChange={onchange} value={value}>
-        {categories.map((el) => {
-          <option key={Math.floor(Math.random() * 100)} value={el}>{el}</option>;
-        })}
+      <select id="filter" onChange={onChange} value={value}>
+        {categories.map((el) => (<option key={Math.random() * 1000} value={el}>{el}</option>))}
       </select>
     </div>
   );

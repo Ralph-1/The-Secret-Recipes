@@ -12,7 +12,7 @@ export const categoryImage = (category) => category.strCategoryThumb;
 
 export const getIngredient = (meal) => {
   const result = [];
-  for (let i = 1; i <= 30; i++) {
+  for (let i = 1; i <= 30; i += 1) {
     if (meal[`strIngredient${i}`] === '') {
       break;
     }
