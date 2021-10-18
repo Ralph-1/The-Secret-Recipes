@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes, { object } from 'prop-types';
 import getCategories from '../actions/fetchCategories';
-import Category from '../components/Category';
+import Category from '../components/Categories';
 import Loading from '../components/loading';
 import {
   getProductsError,

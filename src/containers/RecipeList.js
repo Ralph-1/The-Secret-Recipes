@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import MealPreview from '../components/Recipe';
+import MealPreview from '../components/Recipes';
 import fetchAllMeals from '../actions/fetchAll';
 import fetchMeal from '../actions/fetchSingle';
 import {

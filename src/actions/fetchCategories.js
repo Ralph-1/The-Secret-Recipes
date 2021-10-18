@@ -1,4 +1,3 @@
-import axios from 'axios';
 import {
   fetchProductsError,
   fetchProductsPending,
@@ -7,13 +6,13 @@ import {
 
 const getCategories = () => (dispatch) => {
   dispatch(fetchProductsPending());
-  axios.get('www.themealdb.com/api/json/v1/1/categories.php')
+  fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
     .then((res) => res.json())
     .then((res) => {
       if (res.error) {
         throw (res.error);
       }
-      dispatch(fetchCategories(res.cartegories));
+      dispatch(fetchCategories(res.categories));
     })
     .catch((error) => {
       dispatch(fetchProductsError(error));

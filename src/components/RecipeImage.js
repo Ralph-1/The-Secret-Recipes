@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image } from 'react-boostrap';
 
 const Images = ({ className, src, name }) => (
   <div className={className}>
-    <Image src={src} name={name} />
+    <img src={src} name={name} alt={name} />
     <h3>
       Name
       {name}

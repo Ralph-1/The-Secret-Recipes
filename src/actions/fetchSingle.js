@@ -1,4 +1,3 @@
-import axios from 'axios';
 import {
   fetchProductsError,
   fetchProductsPending,
@@ -7,7 +6,7 @@ import {
 
 const fetchMeal = (id) => (dispatch) => {
   dispatch(fetchProductsPending);
-  axios.get(`www.themealdb.com/api/json/v1/1/search.php?s=${id}`)
+  fetch(`www.themealdb.com/api/json/v1/1/search.php?s=${id}`)
     .then((res) => res.json())
     .then((res) => {
       if (res.error) {
