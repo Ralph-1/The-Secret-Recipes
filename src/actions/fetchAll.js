@@ -13,7 +13,7 @@ const fetchMeals = (type) => (dispatch) => {
         throw (res.error);
       }
       dispatch(fetchProductsSuccess(res.meals));
-     })
+    })
     .catch((error) => {
       dispatch(fetchProductsError(error));
     });
