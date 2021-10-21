@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+<h1 align="center"> The Secret Recipies</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is Microverse's final project in React/Redux's course.
 
-## Available Scripts
+The objective of this project was to create a single page recipe catalogue using React, Redux and TheMealDB API.
 
-In the project directory, you can run:
+## Table of contents
+- [About](#about)
+- [The catalogue](#the-catalogue)
+  - [How to open](#how-to-ope)
+  - [Technologies used](#technologies-used)
+- [Author](#author)
+- [Contribution](#contribution)
+- [Disclaimer](#disclaimer)
 
-### `yarn start`
+## About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project's goal was to build a browsable list of items that you can filter and access to the details of one item. The list should be accessed from an API, so I choose the [TheMealDB-API][TheMealDB-API] and filtered it to store only meals based on their categories.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Link to a live version [here][live-version].
 
-### `yarn test`
+Repository: `https://github.com/Ralph-1/The-Sercet-Recipes`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## The catalogue
 
-### `yarn build`
+When you open the catalog the React APP downloads the data from the server using an API and stores it in the Redux store.
+- A user can view all the meals in the CookBook
+![initScreenshot][]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- A user can click on any category and get to see the meals listed under that category.
+![mealsScreenshot][]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Under each category, a user sees a variety of dishes to make a choice from and each dish chosen has a list of all the ingredients that were used to prepare it, area where it originates from and the category it belongs to:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![][]
 
-### `yarn eject`
+### How to open
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You can open the catalog online clicking [here][live-version] or locally following these steps:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Click on the green button "Clone or Download"
+* Click on Download ZIP or clone the repository to your desired directory
+* Extract the project (This step is for those who download the ZIP)
+* In your terminal, navigate to the folder
+* Run `npm install` or `yarn install`
+* Run `npm start` or `yarn start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+A tab will be opened in the browser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Technologies used
 
-## Learn More
+To create this project I used:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* JavaScript
+* A bit of HTML and CSS
+* Eslint
+* React
+* Redux
+* PropTypes
+* [TheMealDB-API][TheMealDB-API]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author
 
-### Code Splitting
+👤 **Ralph Oburu**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Github: [Ralph-1](https://github.com/ralph-1)
+- Twitter: [@NotRalph0](https://twitter.com/NotRalph0)
+- LinkedIn: [Ralph](https://linkedin.com/in/ralph-oburu)
 
-### Analyzing the Bundle Size
+### Contribution 🤝
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- Links -->
+[TheMealDB-API]: https://www.themealdb.com/api.php
+[live-version]:
