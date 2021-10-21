@@ -11,44 +11,36 @@ import {
   getImg, getArea, getIntructions, getIngredient, getName, categoryName, getProductsPending,
 } from '../config/index';
 
-const MealDetails = ({
-  img,
-  area,
-  ingredients,
-  match,
-  fetchMeal,
-  name,
-  category,
-  pending,
-  resetSelected,
-}) => {
+const MealDetails = (props) => {
+  const {
+    img, area, ingredients, match, fetchMeal, name, category, pending, resetSelected,
+  } = props;
   const { id } = match.params;
-
   useEffect(() => {
     fetchMeal(id);
   }, [fetchMeal, id]);
 
-  const componentShouldRender = () => {
+  const shouldComponentRender = () => {
     if (name === undefined || pending === true) return false;
     return true;
   };
 
-  if (!componentShouldRender()) {
+  if (!shouldComponentRender()) {
     return (<Loading />);
   }
 
   return (
     <div>
       <div>
-        <Image src={img} alt={name} />
-        <div>
+        <Image src={img} name={name} />
+        <div className="w-50">
           <RecipeDescription category={category} area={area} ingredients={ingredients} />
           <div>
             <Link to="/">
-              <button type="button" onClick={resetSelected} className="btn">Home</button>
+              <button type="button" onClick={resetSelected}>Home</button>
             </Link>
             <Link to={`/category/${category}`}>
-              <button type="button" onClick={resetSelected} className="btn">Back</button>
+              <button type="button" onClick={resetSelected}>Back</button>
             </Link>
           </div>
         </div>
@@ -105,7 +97,4 @@ MealDetails.propTypes = {
   resetSelected: PropTypes.func.isRequired,
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(MealDetails);
+export default connect(mapStateToProps, mapDispatchToProps)(MealDetails);

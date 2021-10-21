@@ -1,13 +1,12 @@
 import React from 'react';
-// import { link } from 'react-router-dom';
-import { Navbar, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Nav = () => (
-  <Navbar bg="light" expand="lg">
-    <Container>
-      <Navbar.Brand href="#home">The Sercet Recipes</Navbar.Brand>
-    </Container>
-  </Navbar>
+  <div bg="light" expand="lg" className="nav Header">
+    <Link className="home-link" to="/">
+      <h2>The Sercet Recipes 🤤</h2>
+    </Link>
+  </div>
 );
 
 export default Nav;

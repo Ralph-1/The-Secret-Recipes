@@ -30,7 +30,7 @@ const MealsList = ({
     <div>
       <div className="container">
         {products.map((item) => (
-          <Link to={`/meal/${item.idMeal}`} key={Math.floor(Math.random * 1000)}>
+          <Link to={`/meal/${item.idMeal}`} key={Math.random() * 1000}>
             <MealPreview
               src={item.strMealThumb}
               name={item.strMeal}

@@ -19,7 +19,7 @@ const RecipeDescription = ({
     <hr />
     <p>Ingredients :</p>
     {ingredients.map((item) => (
-      <span key={Math.floor(Math.random * 1000)}>
+      <span key={Math.random() * 1000}>
         {item}
         {' '}
         |

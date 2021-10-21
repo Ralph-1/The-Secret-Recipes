@@ -1,24 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Images = ({ className, src, name }) => (
+const Image = ({ className, src, name }) => (
   <div className={className}>
     <img src={src} name={name} alt={name} />
-    <h3>
-      Name
-      {name}
-    </h3>
+    <h3>{name}</h3>
   </div>
 );
 
-Images.defaultProps = {
+Image.defaultProps = {
   className: 'w-50',
 };
 
-Images.propTypes = {
+Image.propTypes = {
   className: PropTypes.string,
   src: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };
 
-export default Images;
+export default Image;

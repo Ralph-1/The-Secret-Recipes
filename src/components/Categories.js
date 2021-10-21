@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Images from './RecipeImage';
+import Image from './RecipeImage';
 
 const Category = ({ src, name }) => (
-  <Images scr={src} name={name} />
+  <Image src={src} name={name} />
 );
 
 Category.propTypes = {
