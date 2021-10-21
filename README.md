@@ -70,9 +70,6 @@ To create this project I used:
 ### Contribution 🤝
 Contributions, issues and feature requests are welcome!
 
-
-
-
 <!-- Links -->
 [TheMealDB-API]: https://www.themealdb.com/api.php
 [live-version]:
