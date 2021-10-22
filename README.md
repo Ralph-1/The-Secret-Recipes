@@ -7,7 +7,7 @@ The objective of this project was to create a single page recipe catalogue using
 ## Table of contents
 - [About](#about)
 - [The catalogue](#the-catalogue)
-  - [How to open](#how-to-ope)
+  - [How to open](#how-to-open)
   - [Technologies used](#technologies-used)
 - [Author](#author)
 - [Contribution](#contribution)
@@ -72,4 +72,4 @@ Contributions, issues and feature requests are welcome!
 
 <!-- Links -->
 [TheMealDB-API]: https://www.themealdb.com/api.php
-[live-version]:
+[live-version]: https://61714b4270b5acd256658123--hungry-johnson-4b570f.netlify.app/
