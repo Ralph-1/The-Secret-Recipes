@@ -1,0 +1,17 @@
+.cat-filter {
+  border-radius: 4%;
+  height: 7vh;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  width: 40%;
+}
+
+.filter {
+  min-width: 15vh;
+  border-radius: 4%;
+  font-weight: bolder;
+  font-size: large;
+  background-color: rgb(199, 199, 199);
+  color: rgb(65, 65, 65);
+  text-align: center;
+}
