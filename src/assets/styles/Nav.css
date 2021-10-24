@@ -1,0 +1,17 @@
+.Nav-text {
+  color: rgb(253, 253, 253);
+  font-weight: bolder;
+  font-size: 3em;
+  padding: 1px;
+  margin: 5px;
+}
+
+.home-link {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  border-radius: 5px;
+  border-bottom: rgb(43, 42, 42) 2px solid;
+  box-shadow: 1px 5px 9px 3px rgba(3, 3, 3, 0.6);
+  background-color: rgba(20, 20, 20, 1);
+}

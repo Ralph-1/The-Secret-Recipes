@@ -7,7 +7,7 @@ import Navbar from '../containers/Nav';
 import Home from '../containers/Home';
 import allMeals from '../containers/AllRecipes';
 import MealDetails from '../containers/ItemDetails';
-import '../assets/styles/App';
+import '../assets/styles/App.css';
 
 const App = () => (
   <div className="App">
