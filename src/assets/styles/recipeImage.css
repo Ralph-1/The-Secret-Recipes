@@ -1,0 +1,16 @@
+.recipeImage {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.recipeText {
+  max-width: 15vw;
+  width: 100%;
+  color: black;
+  display: inline-block;
+  font-size: 80%;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 7px 7px 50px -10px rgba(0, 0, 0, 0.7);
+}
