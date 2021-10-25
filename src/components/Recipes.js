@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Image from './RecipeImage';
 
 const Meal = ({ name, src }) => (
-  <Image src={src} name={name} alt={name} />
+  <Image className="category" src={src} name={name} alt={name} />
 );
 
 Meal.propTypes = {

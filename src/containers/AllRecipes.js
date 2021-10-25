@@ -24,7 +24,7 @@ const AllMeals = (props) => {
   return (
     <div>
       <div>
-        <div>
+        <div className="mb-2">
           <CategoryFilter onChange={handleFilterChange} value={current} />
         </div>
       </div>

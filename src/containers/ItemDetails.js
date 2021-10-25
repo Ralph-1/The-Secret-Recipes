@@ -10,6 +10,7 @@ import { resetSelected } from '../actions/index';
 import {
   getImg, getArea, getIntructions, getIngredient, getName, categoryName, getProductsPending,
 } from '../config/index';
+import '../assets/styles/itemDetails.css';
 
 const MealDetails = (props) => {
   const {
@@ -30,17 +31,17 @@ const MealDetails = (props) => {
   }
 
   return (
-    <div>
-      <div>
-        <Image src={img} name={name} />
+    <div className="itemDetails">
+      <div className="flex itemContents">
+        <Image className="itemImages" src={img} name={name} />
         <div className="w-50">
           <RecipeDescription category={category} area={area} ingredients={ingredients} />
-          <div>
-            <Link to="/">
-              <button type="button" onClick={resetSelected}>Home</button>
-            </Link>
+          <div className="itemsBtn mt-5 w-50 mx-auto">
             <Link to={`/category/${category}`}>
-              <button type="button" onClick={resetSelected}>Back</button>
+              <button className="btn btn-outline-secondary btn-lg btn-block mb-2 btnLink" type="button" onClick={resetSelected}>Back</button>
+            </Link>
+            <Link to="/">
+              <button className="btn btn-outline-dark btn-lg btn-block btnLink" type="button" onClick={resetSelected}>Home</button>
             </Link>
           </div>
         </div>

@@ -5,33 +5,35 @@ const RecipeDescription = ({
   category, area, ingredients, className,
 }) => (
   <div className={className}>
-    <p>
-      <span>Category :</span>
+    <p className="pt-4">
+      <span className="font-weight-bolder h5">Category :</span>
       <span>{category}</span>
     </p>
     <br />
     <hr />
-    <p>
-      <span>Area :</span>
+    <p className="pt-4">
+      <span className="font-weight-bolder h5">Area :</span>
       <span>{area}</span>
     </p>
     <br />
     <hr />
-    <p>Ingredients :</p>
-    {ingredients.map((item) => (
-      <span key={Math.random() * 1000}>
-        {item}
-        {' '}
-        |
-        {' '}
-      </span>
-    ))}
+    <p className="pt-4 font-weight-bolder h5">Ingredients :</p>
+    <div className="pb-4">
+      {ingredients.map((item) => (
+        <span key={Math.random() * 1000}>
+          {item}
+          {' '}
+          |
+          {' '}
+        </span>
+      ))}
+    </div>
     <hr />
   </div>
 );
 
 RecipeDescription.defaultProps = {
-  className: 'w-50',
+  className: 'text-center ml-5',
 };
 
 RecipeDescription.propTypes = {
