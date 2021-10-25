@@ -4,7 +4,7 @@ import '../assets/styles/recipeImage.css';
 
 const Image = ({ className, src, name }) => (
   <div className={className}>
-    <img className="recipeImage" src={src} name={name} alt={name} />
+    <img className="recipeImage h4 bold" src={src} name={name} alt={name} />
     <h3 className="recipeText">{name}</h3>
   </div>
 );

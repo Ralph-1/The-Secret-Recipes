@@ -28,7 +28,7 @@ const MealsList = ({
   if (!shouldComponenRender()) { <Loading />; }
   return (
     <div>
-      <div className="container">
+      <div className="container grid">
         {products.map((item) => (
           <Link to={`/meal/${item.idMeal}`} key={Math.random() * 1000}>
             <MealPreview
