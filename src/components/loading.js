@@ -1,8 +1,7 @@
-import loading from '../assets/images/loading.svg';
-
 const Loading = () => (
-  <div>
-    <img src={loading} alt="loading icon" />
+  <div className=" container mx-auto">
+    <strong>Loading...</strong>
+    <div className="spinner-border ml-auto" role="status" aria-hidden="true" />
   </div>
 );
 

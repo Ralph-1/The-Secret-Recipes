@@ -32,8 +32,10 @@ const AllCategories = (props) => {
 
   return (
     <div>
-      <h1 className="h5"> EXPLORE THE WORLD&apos;S BEST RECIPES</h1>
-      <p>Pick your scecret category</p>
+      <div className="_header pt-2 my-2">
+        <h1 className="h5"> EXPLORE THE WORLD&apos;S BEST RECIPES</h1>
+        <p>Pick your scecret category</p>
+      </div>
       <div className="container grid">
         {categories.map((item) => <Link key={item.idCategory} to={`/category/${item.strCategory}`}><Category name={categoryName(item)} description={categoryDetails(item)} src={categoryImage(item)} /></Link>)}
       </div>
