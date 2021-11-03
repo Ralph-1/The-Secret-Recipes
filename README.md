@@ -75,4 +75,4 @@ Contributions, issues and feature requests are welcome!
 [live-version]: https://61714b4270b5acd256658123--hungry-johnson-4b570f.netlify.app/
 [initScreenshot]: ./src/assets/images/initial.png
 [mealsScreenshot]: ./src/assets/images/meals.png
-[descriptionScreenshot]: ./src/assests/images/description.png
+[descriptionScreenshot]: ./src/assets/images/description.png
