@@ -73,6 +73,6 @@ Contributions, issues and feature requests are welcome!
 <!-- Links -->
 [TheMealDB-API]: https://www.themealdb.com/api.php
 [live-version]: https://61714b4270b5acd256658123--hungry-johnson-4b570f.netlify.app/
-[initScreenshot]: ./src/assets/images/initial.png
+[initScreenshot]: ./src/assets/images/intial.png
 [mealsScreenshot]: ./src/assets/images/meals.png
 [descriptionScreenshot]: ./src/assets/images/description.png
