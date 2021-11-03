@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component should match snapshot 1`] = `
+<div
+  className="component"
+>
+  <p
+    className="pt-4"
+  >
+    <span
+      className="font-weight-bolder h5"
+    >
+      Category :
+    </span>
+    <span>
+      test
+    </span>
+  </p>
+  <br />
+  <hr />
+  <p
+    className="pt-4"
+  >
+    <span
+      className="font-weight-bolder h5"
+    >
+      Area :
+    </span>
+    <span>
+      jest
+    </span>
+  </p>
+  <br />
+  <hr />
+  <p
+    className="pt-4 font-weight-bolder h5"
+  >
+    Ingredients :
+  </p>
+  <div
+    className="pb-4"
+  >
+    <span>
+      react
+       
+      |
+       
+    </span>
+    <span>
+      redux
+       
+      |
+       
+    </span>
+  </div>
+  <hr />
+</div>
+`;
