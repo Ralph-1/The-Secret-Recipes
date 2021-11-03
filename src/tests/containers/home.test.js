@@ -2,6 +2,7 @@ import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import { Provider } from 'react-redux';
 import Adapter from 'enzyme-adapter-react-16';
+import renderer from 'react-test-renderer';
 import AllCategories from '../../containers/Home';
 import store from '../../reducers/index';
 
@@ -12,6 +13,12 @@ const setup = () => {
 };
 
 describe('should not be visible on app loading', () => {
+  it('should match the snapshot', () => {
+    const tree = renderer.create(<Provider store={store}><AllCategories /></Provider>);
+
+    expect(tree).toMatchSnapshot();
+  });
+
   let component;
   beforeEach(() => {
     component = setup();

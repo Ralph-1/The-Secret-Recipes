@@ -1,8 +1,8 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import RecipeDescription from '../../components/Description';
 import renderer from 'react-test-renderer';
+import RecipeDescription from '../../components/Description';
 
 const initial = {
   category: 'test',
@@ -35,7 +35,7 @@ describe('Header Component', () => {
       category={category}
       area={area}
       className={className}
-     />).toJSON();
+    />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
