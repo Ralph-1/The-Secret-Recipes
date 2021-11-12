@@ -3,7 +3,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Navbar from '../containers/Nav';
+import Navbar from './Nav';
 import Home from '../containers/Home';
 import allMeals from '../containers/AllRecipes';
 import MealDetails from '../containers/ItemDetails';
