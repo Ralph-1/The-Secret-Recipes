@@ -8,6 +8,7 @@ The objective of this project was to create a single page recipe catalogue using
 - [About](#about)
 - [The catalogue](#the-catalogue)
   - [How to open](#how-to-open)
+  - [Tests](#tests)
   - [Technologies used](#technologies-used)
 - [Author](#author)
 - [Contribution](#contribution)
@@ -36,7 +37,7 @@ When you open the catalog the React APP downloads the data from the server using
 
 ### How to open
 
-You can open the catalog online clicking [here][live-version] or locally following these steps:
+You can open the catalog online by clicking [here][live-version] or locally following these steps:
 
 * Click on the green button "Clone or Download"
 * Click on Download ZIP or clone the repository to your desired directory
@@ -46,6 +47,10 @@ You can open the catalog online clicking [here][live-version] or locally followi
 * Run `npm start` or `yarn start`
 
 A tab will be opened in the browser.
+
+### Tests
+To run the tests, open a terminal in this project directory and run
+  `npm test` or `yarn test`
 
 ### Technologies used
 
@@ -72,7 +77,7 @@ Contributions, issues and feature requests are welcome!
 
 <!-- Links -->
 [TheMealDB-API]: https://www.themealdb.com/api.php
-[live-version]: https://61714b4270b5acd256658123--hungry-johnson-4b570f.netlify.app/
+[live-version]: https://hungry-johnson-4b570f.netlify.app/
 [initScreenshot]: ./src/assets/images/intial.png
 [mealsScreenshot]: ./src/assets/images/meals.png
 [descriptionScreenshot]: ./src/assets/images/description.png
