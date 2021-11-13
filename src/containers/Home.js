@@ -1,8 +1,7 @@
-/* eslint-disable react/forbid-prop-types */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import PropTypes, { object } from 'prop-types';
+import PropTypes from 'prop-types';
 import getCategories from '../actions/fetchCategories';
 import Category from '../components/Categories';
 import Loading from '../components/loading';
@@ -45,7 +44,7 @@ const AllCategories = (props) => {
 
 AllCategories.propTypes = {
   pending: PropTypes.bool.isRequired,
-  categories: PropTypes.arrayOf(object).isRequired,
+  categories: PropTypes.instanceOf(Object).isRequired,
   getCategories: PropTypes.func.isRequired,
 };
 
