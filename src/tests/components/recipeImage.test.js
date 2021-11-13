@@ -34,6 +34,10 @@ describe('Header Component', () => {
     expect(component.find('h3').length).toBe(1);
   });
 
+  it('should not display two header', () => {
+    expect(component.find('h3').length).not.toBe(2);
+  });
+
   it('should not display header ', () => {
     expect(component.find('h1').length).toBe(0);
   });

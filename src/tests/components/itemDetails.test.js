@@ -49,7 +49,15 @@ describe('Header Component', () => {
     expect(component.find('div').length).toBe(2);
   });
 
+  it('should always render a div', () => {
+    expect(component.find('div').length).not.toBe(0);
+  });
+
   it('should render 6 span element', () => {
     expect(component.find('span').length).toBe(6);
+  });
+
+  it('should always render a span', () => {
+    expect(component.find('span').length).not.toBe(0);
   });
 });

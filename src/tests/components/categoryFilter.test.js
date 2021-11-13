@@ -25,4 +25,8 @@ describe('Header Component', () => {
   it('should have one span', () => {
     expect(component.find('select').length).toBe(1);
   });
+
+  it('should not render two spans', () => {
+    expect(component.find('select').length).not.toBe(2);
+  });
 });

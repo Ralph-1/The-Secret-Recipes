@@ -21,7 +21,15 @@ describe('Should not display content while app is loading', () => {
     expect(component.find('h1').length).toBe(0);
   });
 
+  it('should not render any header elements', () => {
+    expect(component.find('h1').length).not.toBe(1);
+  });
+
   it('should not render any span element', () => {
     expect(component.find('span').length).toBe(0);
+  });
+
+  it('should not render any span element', () => {
+    expect(component.find('span').length).not.toBe(1);
   });
 });
